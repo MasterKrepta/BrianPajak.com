@@ -1,20 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+
+
   <link rel="stylesheet" href="styles.css">
+
   <title>Document</title>
 </head>
+
 <body>
-  
+
   <!-- Static Nav -->
+  <nav class="mainNav">
+    <div class="container">
+      <img class="logo" src='http://unsplash.it/250/75?random' alt='' />
+    </div>
+    <div class="container">
+      <ul class="nav">
+        <a href="#who-am-i">
+          <li class="nav-item">Who Am I</li>
+        </a>
+        <a href="#skills">
+          <li class="nav-item">Skills</li>
+        </a>
+        <a href="#projects">
+          <li class="nav-item">Projects</li>
+        </a>
+        <a href="#contact-me">
+          <li class="nav-item">Contact Me</li>
+        </a>
+      </ul>
+    </div>
+  </nav>
   <!-- Welcome/Jumbotron -->
-  <!-- Intro -->
+  <div class="welcome">
+    <div class="container">
+      <h1>I'm Brian Pajak</h1>
+      <a href="#" class="btn btn-secondary">Who am I?</a>
+      <a href="#" class="btn btn-primary">Hire Me</a>
+    </div>
+  </div>
+
+  <!-- welcome -->
+  <div id="who-am-i">
+    <h2>Who Am I?</h2>
+    <hr>
+    <div class="container">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem id eligendi voluptate, temporibus ex voluptas recusandae
+        nisi accusantium consequuntur laboriosam excepturi, dolorem facere officia maiores!</p>
+    </div>
+  </div>
   <!-- Skills -->
+  <h2 id="skills">Skills</h2>
+  <hr>
+  <div class="container">
+    <div id="skillBoxes">
+      <div class="card">
+        <i class="fas fa-gamepad"></i>
+        <p>Game Development with the Unity&copy; Game Engine</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-pen-nib"></i>
+        <p>Web Design</p>
+      </div>
+      <div class="card">
+        <i class="fab fa-js-square"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-code"></i>
+        <p>C#</p>
+      </div>
+    </div>
+  </div>
+  </div>
   <!-- Projects -->
+  <h2 id="projects">Projects</h2>
+  <hr>
+  <div class="projects">
+    <div class="container">
+      <p>projects Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, corporis.</p>
+    </div>
+  </div>
   <!-- ContactForm -->
+  <h2>Contact Me</h2>
+  <hr>
+  <div class="#contact-form">
+    <div class="container">
+      <form action="">
+        First name:
+        <br>
+        <input type="text" name="firstname" value="Mickey">
+        <br> Email:
+        <br>
+        <input type="text" name="email" value="Email">
+        <br> Phone(optional):
+        <br>
+        <input type="text" name="phone" value="Phone">
+        <br>
+        <textarea name="comment" form="usrform">Enter text here...</textarea>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
   <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Footer</p>
+      <p>&copy; 2018 Brian Pajak</p>
+    </div>
+  </footer>
 </body>
+
 </html>

@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 :root {
-	--main-text: #ccc;
-	--main-bg: #7a8cee;
+	--main-text: rgb(255, 255, 255);
+	--main-bg: rgb(188, 197, 248);
+	--dark: rgb(31, 25, 146);
+	--extra-dark: rgb(9, 7, 44);
+	--light: rgb(238, 169, 41);
+	--hightlight: rgb(247, 211, 11);
 }
 
 * {
@@ -8,5 +14,105 @@
 	padding: 0;
 }
 
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
 body {
+	background-color: var(--main-bg);
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1em;
+	line-height: 1.6em;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+}
+i {
+	color: var(--light);
+	font-size: 2em;
+}
+
+/* Nav  */
+.mainNav {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	background-color: var(--dark);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.mainNav .container {
+	display: flex;
+	align-items: center;
+}
+
+.nav-item {
+	display: inline;
+	color: var(--main-text);
+	padding: 0 15px 0 15px;
+}
+.nav-item:hover {
+	color: var(--hightlight);
+}
+hr {
+	margin: 25px 0;
+}
+
+/* Welcome*/
+.welcome {
+	margin-top: 100px;
+	background-size: cover;
+	background-image: url("../ims/welcome_bg.jpg");
+	height: 70vh;
+	display: flex;
+	align-items: center;
+}
+
+.welcome h1 {
+	color: var(--main-text);
+	font-size: 3em;
+	padding-bottom: 50px;
+}
+
+.btn {
+	padding: 10px;
+	border: 1px solid rgb(53, 51, 51);
+	border-radius: 10px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+btn:hover {
+	background-color: var(--hightlight);
+}
+.btn-primary {
+	background-color: var(--dark);
+	color: var(--main-text);
+}
+
+.btn-secondary {
+	background-color: var(--light);
+}
+
+/* Skill Boxes */
+#skillBoxes {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	/* grid-template-rows: repeat(2, fr); */
+}
+
+.card {
+	max-width: 300px;
+	padding-bottom: 50px;
+}
+
+/* Footer */
+footer {
+	min-height: 300px;
+	background-color: rgb(9, 7, 44);
+	color: var(--main-text);
 }
