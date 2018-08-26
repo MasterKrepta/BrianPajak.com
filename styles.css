@@ -140,6 +140,7 @@ btn:hover {
 	border-radius: 25px;
 }
 
+/* Form Area */
 .form-area {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -157,6 +158,12 @@ textarea {
 textarea {
 	height: 22em;
 }
+
+input[type="submit"] {
+	padding-bottom: 25px;
+}
+
+/* Social  */
 .social {
 	text-align: left;
 }
