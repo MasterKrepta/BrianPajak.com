@@ -32,7 +32,8 @@ a {
 }
 i {
 	color: var(--light);
-	font-size: 2em;
+	font-size: 3em;
+	padding-bottom: 25px;
 }
 
 h2 {
@@ -98,7 +99,7 @@ hr {
 	text-transform: capitalize;
 }
 btn:hover {
-	background-color: var(--hightlight);
+	background-color: var(--light);
 }
 .btn-primary {
 	background-color: var(--dark);
