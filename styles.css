@@ -1,0 +1,12 @@
+:root {
+	--main-text: #ccc;
+	--main-bg: #7a8cee;
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+body {
+}
