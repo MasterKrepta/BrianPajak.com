@@ -47,6 +47,7 @@ h2 {
 	background-color: var(--dark);
 	position: fixed;
 	top: 0;
+	z-index: 500 !important;
 	width: 100%;
 	height: 100px;
 	margin-bottom: 50px;
@@ -110,6 +111,21 @@ btn:hover {
 	background-color: var(--light);
 }
 
+/* Who Am I */
+#who-am-i .container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+#who-am-i img {
+	padding-right: 50px;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+#who-am-i p {
+	text-align: left;
+	padding-left: 50px;
+}
 /* Skill Boxes */
 #skillBoxes {
 	display: grid;
@@ -120,12 +136,34 @@ btn:hover {
 	max-width: 300px;
 	padding-bottom: 50px;
 }
+.card p {
+	font-size: 1.5em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid var(--hightlight);
+	margin-bottom: 1.5em;
+}
+.card ul li {
+	list-style-type: square;
+	text-align: left;
+}
+/* Projects */
+
+.project-title {
+	font-size: 1.2em;
+	color: var(--extra-dark);
+}
+.project-type {
+	font-size: .5em;
+	color: var(--light);
+	padding-bottom: 25px;
+}
 .project-grid {
 	text-align: center;
 	max-width: 1400px;
 	display: grid;
 	gap: 10px;
 	grid-template-columns: repeat(2, 1fr);
+	background-color: var(--light);
 }
 
 .project-card {
