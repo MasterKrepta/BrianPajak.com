@@ -35,7 +35,9 @@ i {
 	font-size: 3em;
 	padding-bottom: 25px;
 }
-
+p {
+	padding-bottom: 25px;
+}
 h2 {
 	padding-top: 75px;
 }
@@ -94,6 +96,7 @@ hr {
 
 .btn {
 	padding: 10px;
+	margin: 10px;
 	border: 1px solid rgb(53, 51, 51);
 	border-radius: 10px;
 	font-weight: bold;
@@ -146,8 +149,22 @@ btn:hover {
 	list-style-type: square;
 	text-align: left;
 }
-/* Projects */
 
+/* WAKA TIME */
+#waka-img {
+	display: none;
+}
+#waka-time p {
+	padding-bottom: 50px;
+	width: 500px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+	display: block;
+}
+
+/* Projects */
 .project-title {
 	font-size: 1.2em;
 	color: var(--extra-dark);
