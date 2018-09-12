@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.6em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+#page {
+  margin: 0 auto;
+  max-width: 1100px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "main main main waka"
+    "main main main projects"
+    "footer footer footer footer";
+}
+
+#page,
+section,
+nav,
+aside,
+footer {
+  background-color: #3fb7db;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  padding: 20px;
+
+}
+
+#main-header {
+  grid-area: header;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.nav-menu {
+  flex: 3;
+}
+
+.nav-menu ul {
+  flex: 1;
+  display: flex;
+  list-style-type: none;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  flex-flow: row wrap;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.logo {
+  flex: 1;
+  padding: 15px;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+#main-nav {
+  grid-area: nav;
+}
+
+#main {
+  grid-area: main;
+  text-align: left;
+}
+
+#projects {
+  grid-area: projects;
+}
+
+#main-footer {
+  grid-area: footer;
+}
+
+
+#waka-img {
+  min-width: 200px;
+  max-width: 400px;
+}
